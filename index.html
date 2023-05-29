@@ -11,14 +11,17 @@
 </head>
 <body>
     <div id="app">
+        <div class="container">
 
-        <h2>
-            <ul>
-                <li v-if="mails.length === 10" v-for="mail in mails">
-                    {{mail}}
-                </li>
-            </ul>
-        </h2>
+            <h2>
+                <ul>
+                    <li v-if="mails.length === 10" v-for="(mail, index) in mails">
+                        <div>{{index + 1}}</div>
+                        <div>{{mail}}</div>
+                    </li>
+                </ul>
+            </h2>
+        </div>
 
     </div>
 

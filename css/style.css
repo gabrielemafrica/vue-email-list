@@ -3,3 +3,45 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+#app{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 80%;
+    border: 5px solid lightpink;
+
+}
+
+h2{
+    font-weight: lighter;
+}
+ul{
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    cursor: pointer;
+}
+li:nth-child(2n-2){
+    background-color: lightpink;
+}
+li:hover{
+    background-color: lightskyblue;
+    color: white;
+}
